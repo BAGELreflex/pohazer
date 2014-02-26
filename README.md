@@ -1,5 +1,5 @@
 # _PoHazer_
-_Description: PoHazer Description
+_Description: PoHazer Description_
 
 ## Project Setup
 _How do I, as a front-end user, start using PoHazer to improve my poker playing skills?_
