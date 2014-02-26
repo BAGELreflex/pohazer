@@ -3,7 +3,7 @@ _Description: PoHazer Description_
 
 ## Project Setup
 _How do I, as a front-end user, start using PoHazer to improve my poker playing skills?_
-1. Install the software
-2. Do work
+1. _Install the software_
+2. _Do work_
 
 ### Basically H3
