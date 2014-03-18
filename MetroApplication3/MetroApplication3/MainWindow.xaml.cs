@@ -24,5 +24,10 @@ namespace MetroApplication3
         {
             InitializeComponent();
         }
+
+        private void CloseProgram(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
