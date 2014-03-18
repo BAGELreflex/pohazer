@@ -1,0 +1,168 @@
+﻿<metro:Window x:Class="MetroApplication3.MainWindow"
+              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+              xmlns:metro="http://schemas.codeplex.com/elysium"
+              xmlns:params="http://schemas.codeplex.com/elysium/params"
+              params:Design.Theme="Dark"
+              params:Design.AccentBrush="{x:Static metro:AccentBrushes.Blue}"
+              params:Design.ContrastBrush="White"
+              Title="PoHazer Beta 0.1" Height="695.522" Width="1019.403" Foreground="White">
+    <Grid Background="#FF012E4D">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="42" />
+            <RowDefinition MinHeight="554"/>
+            <RowDefinition Height="Auto" MinHeight="61"/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" IsMainMenu="True" Height="42" Grid.ColumnSpan="2" Background="#FF017BCD">
+            <MenuItem Header="_FILE">
+                <MenuItem Header="_Switch User">
+
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="_Backup">
+
+                </MenuItem>
+                <MenuItem Header="_Restore">
+
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="_Exit">
+
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_CONFIGURE">
+                <MenuItem Header="_Database Management">
+                    
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="_Site Options">
+                    
+                </MenuItem>
+                <MenuItem Header="_Import Options">
+                    
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_HELP">
+                <MenuItem Header="_About">
+
+                </MenuItem>
+                <MenuItem Header="_Glossary">
+
+                </MenuItem>
+                <Separator />
+                <MenuItem Header="_Contact">
+                    
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TabControl Margin="5 5 5 0" Background="#FF012E4D" Grid.Row="1">
+            <TabItem Header="Import Hands" Margin="0,-1,0,1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Label Margin="5" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Center" FontSize="14" FontWeight="Bold">Poker Client</Label>
+                    <ComboBox Grid.Column="1" Margin="5">
+                        <ComboBox.Items>
+                            <ComboBoxItem>Carbon Poker</ComboBoxItem>
+                            <ComboBoxItem>Lock Poker</ComboBoxItem>
+                        </ComboBox.Items>
+                    </ComboBox>
+                    <Button Grid.Column="2" Width="100" Margin="5">Auto Import</Button>
+                    <Button Grid.Column="3" Width="100" Margin="5">Browse</Button>
+                    <Grid Width="175" Height="300" Grid.Row="1" VerticalAlignment="Top">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" FontSize="14" FontWeight="Bold">Overview</Label>
+                        <Label Grid.Row="1" Grid.Column ="0" Foreground="White" VerticalAlignment="Center">Player</Label>
+                        <Label Grid.Row ="1" Grid.Column="1" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Center">GFXDude</Label>
+                        <Label Grid.Row="2" Grid.Column="0" Foreground="White" VerticalAlignment="Center">Cash Won</Label>
+                        <Label Grid.Row="2" Grid.Column="1" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Center">$0.29</Label>
+                        <Label Grid.Row="3" Grid.Column="0" Foreground="White" VerticalAlignment="Center">Hands Played</Label>
+                        <Label Grid.Row="4" Grid.Column="0" Foreground="White" VerticalAlignment="Center">Hands Won</Label>
+                        <Label Grid.Row="5" Grid.Column="0" Foreground="White" VerticalAlignment="Center">Sessions</Label>
+                        <Label Grid.Row="6" Grid.Column="0" Foreground="White" VerticalAlignment="Center">Sessions Won</Label>
+                        <Label Grid.Row="7" Grid.Column="0" Foreground="White" VerticalAlignment="Center">BB/100</Label>
+                        <Label Grid.Row="8" Grid.Column="0" Foreground="White" VerticalAlignment="Center">Cash/100</Label>
+                        <Label Grid.Row="9" Grid.Column="0" Foreground="White" VerticalAlignment="Center">WWSF</Label>
+                        <Label Grid.Row="10" Grid.Column="0" Foreground="White" VerticalAlignment="Center">Avg. All-In Eq.</Label>
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        
+                        <Rectangle Margin="5 5 5 0" Fill="White"></Rectangle>
+                        <Label Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72">GRAPH</Label>
+                        <Rectangle Grid.Row="1" Margin="5 5 5 0" Fill="White"></Rectangle>
+                        <Label Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72">TABLE</Label>
+                        
+                        
+                    </Grid>
+                    <!--<TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" Margin="5"/>-->
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="History">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <Label Margin="5">Schedule</Label>
+                    <ComboBox Grid.Column="1" Margin="5">
+                        <ComboBox.Items>
+                            <ComboBoxItem>Annually</ComboBoxItem>
+                            <ComboBoxItem>Monthly</ComboBoxItem>
+                        </ComboBox.Items>
+                    </ComboBox>
+                    <Label Grid.Row="1" Margin="5">Amount</Label>
+                    <TextBox Grid.Row="1" Grid.Column="1" Margin="5"/>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Statistics"></TabItem>
+            <TabItem Header="Reports"></TabItem>
+            <TabItem Header="Graphs"></TabItem>
+            <TabItem Header="Hand Replay"></TabItem>
+        </TabControl>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="2">
+            <Button Width="100" Margin="5 10">OK</Button>
+            <Button Width="100" Margin="5 10">Cancel</Button>
+        </StackPanel>
+    </Grid>
+</metro:Window>
